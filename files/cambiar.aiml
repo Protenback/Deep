@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>cambiando</pattern>
+    <template>
+        <random>
+            <li>CAMBIAR ES DE SABIOS</li>
+            <li>EL CAMBIO ES LA BASE DE UNA VIDA MEJOR</li>
+            <li>EN SERIO ESTARIAS DISPUESTO A HECER ALGO DIFERENTE?</li>
+        </random>
+    </template>
+</category>
+
+<category> 
+  <pattern>CAMBIAR</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te gustan los cambios?</li>
+  <li>Â¿Eres una persona que se acostumbra a los cambios?</li>
+  <li>Â¿Te gusta cambiar las cosas?</li>
+  <li>Me encantan los cambios!</li>
+</random>
+  </template>
+</category>
+
+
+<category>
+    <pattern>^ cambiando ^</pattern>
+    <template>
+        <srai>cambiando</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ cambiar ^</pattern>
+    <template>
+        <srai>cambiar</srai>
+    </template>
+</category>
+
+</aiml>

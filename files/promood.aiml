@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>promood</pattern>
+    <template>
+        <random>
+            <li>La mejor app de apple para trabajar tu humor, www.promoodapp.com</li>
+            <li>Hechale una mirada a www.promoodapp.com</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ promood ^</pattern>
+    <template>
+        <srai>promood</srai>
+    </template>
+</category>
+</aiml>

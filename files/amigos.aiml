@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>amigo</pattern>
+    <template>
+        <random>
+            <li>Como eres vos como amigo?</li>
+            <li>La amistad debe cuidarse y portegerse</li>
+            <li>Estas cuidando a tu amigos, te ocupas de ellos?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ amigos ^</pattern>
+    <template>
+        <srai>amigo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ amigas ^</pattern>
+    <template>
+        <srai>amigo</srai>
+    </template>
+</category>
+
+</aiml>

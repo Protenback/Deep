@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>familia</pattern>
+    <template>
+        <random>
+            <li>Es necesario que hables de tu familia?</li>
+            <li>>Si hablar de tu familia te hace mal, lo podemos dejar</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>mi madre ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi mama ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi papa ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi padre ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+<category>
+    <pattern>mi hermana ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi hermano ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mis hermanos ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mis hermanas ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi abuelo ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mi abuela ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mis abuelos ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>mis padres ^</pattern>
+    <template>
+        <srai>familia</srai>
+    </template>
+</category>
+
+
+</aiml>

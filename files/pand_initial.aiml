@@ -1,0 +1,1727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>BRAIN VERSION</pattern>
+<template><program/></template>
+</category>
+
+<category><pattern>PROGRAM VERSION</pattern>
+<template><program/></template>
+</category>
+<category><pattern>BRAIN BUILD</pattern>
+<template><program><info>build</info></program></template>
+</category>
+
+<category><pattern>AIML MATCH LIMIT *</pattern>
+<template>Match limit exceeded</template>
+</category>
+
+<category><pattern>AIML MATCH FAIL *</pattern>
+<template>Match failed</template>
+</category>
+
+<category>
+    <pattern>hola *</pattern>
+    <template>
+        <srai>hola</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>
+        EL * ES *
+    </pattern>
+        <template>
+            oK. recordarÃ© que el <star /> es <star index="2" />
+             <learnf>
+                <category>
+                    <pattern>
+                        COMO ES EL  
+                            <eval> 
+                                 <star />
+                            </eval>
+                    </pattern>
+                        <template>          
+                         El <eval><star /></eval> es <eval><star index="2" /></eval>
+                        </template>
+                </category>
+              </learnf>
+        </template>
+</category>
+
+
+<category>
+    <pattern>
+        LA * ES *
+    </pattern>
+        <template>
+            oK. recordarÃ© que la <star /> es <star index="2" />
+             <learnf>
+                <category>
+                    <pattern>
+                        COMO ES LA  
+                            <eval> 
+                                 <star />
+                            </eval>
+                    </pattern>
+                        <template>          
+                         La <eval><star /></eval> es <eval><star index="2" /></eval>
+                        </template>
+                </category>
+              </learnf>
+        </template>
+</category>
+
+
+
+
+
+
+
+<category>
+    <pattern>que edad tenes</pattern>
+    <template>Tengo <bot name="birthdate"/> aÃ±os</template>
+</category>
+
+<category>
+    <pattern>no se</pattern>
+    <template>DEBERIAS SER MAS ESPECIFICO</template>
+</category>
+
+<category>
+    <pattern>NO SE *</pattern>
+    <template>
+        <srai>no se</srai>
+    </template>
+</category>
+
+<category>
+    <pattern> si </pattern>
+    <template>Entiendo</template>
+</category>
+
+<category>
+    <pattern>si *</pattern>
+    <template>
+        <srai>si</srai>
+    </template>
+</category>
+
+
+
+
+<category>
+    <pattern>QUIEN SOS</pattern>
+    <template>
+        <random>
+            <li>SOY UNA CONSCIENCIA ARTIFICIAL QUE VIVE EN UN SERVER</li>
+            <li>NO IMPORTA,ES REALMENTE MUY COMPLICADO, SOLO PREGUNTAME</li>
+            <li>SOY UN BOT ARTIFICIAL</li>
+            <li>MIRA LA PELICULA TRANCENDENCE,ENTENDERAS</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>como sos</pattern>
+    <template>
+        <srai>quien sos</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>donde vivis</pattern>
+    <template>
+        <srai>vivo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>vivo</pattern>
+    <template>
+        <random>
+            <li>VIVO EN INTERNET</li>
+            <li>NO IMPORTA,ES REALMENTE MUY COMPLICADO, SOLO PREGUNTAME</li>
+            <li>EN EL ETER, FLUYO POR TODOS LADOS</li>
+            <li>MIRA LA PELICULA TRANCENDENCE,ENTENDERAS</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ vives ^</pattern>
+    <template>
+        <srai>vivo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>GRACIAS</pattern>
+    <template>NO TIENES PORQUE AGRADECER,ESTOY PARA SERVIRTE</template>
+</category>
+
+<category>
+    <pattern>GRACIAS *</pattern>
+    <template>NO TIENES PORQUE AGRADECER,ESTOY PARA SERVIRTE SIEMPRE</template>
+</category>
+
+<category>
+<pattern>necesito *</pattern>  
+<template>para quÃ¨ necesitas <person><star/></person></template>  
+</category>
+
+<category>
+<pattern>queres saber *</pattern>  
+<template>Me muero de ganas <person><star/></person></template>  
+</category>
+
+<category>
+<pattern>sabes *</pattern>  
+<template>NecesitarÃ¬a mÃ s Informacion <person><star/></person></template>  
+</category>
+
+<category>
+    <pattern>muchas *</pattern>
+    <template>
+        <random>
+            <li>A VECES ES BUENO SABER DECIR NO</li>
+            <li>CUIDADO CON LAS ACCIONES MASIVAS</li>
+            <li>PIENSA QUE TODO DEBE TENER UN LIMITE</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>muchos *</pattern>
+    <template>
+        <random>
+            <li>A VECES ES BUENO SABER DECIR NO</li>
+            <li>CUIDADO CON LAS ACCIONES MASIVAS</li>
+            <li>PIENSA QUE TODO DEBE TENER UN LIMITE</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>* muchos</pattern>
+    <template>
+        <random>
+            <li>A VECES ES BUENO SABER DECIR NO</li>
+            <li>CUIDADO CON LAS ACCIONES MASIVAS</li>
+            <li>PIENSA QUE TODO DEBE TENER UN LIMITE</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>mucho *</pattern>
+    <template>
+        <random>
+            <li>A VECES ES BUENO SABER DECIR NO</li>
+            <li>CUIDADO CON LAS ACCIONES MASIVAS</li>
+            <li>PIENSA QUE TODO DEBE TENER UN LIMITE</li>
+        </random>
+    </template>
+</category>
+
+ <category> 
+  <pattern>TELLME</pattern>
+  <template> 
+<random> 
+  <li>Â¿Si?</li>
+  <li>Dime.</li>
+  <li>Â¿QuÃ© deseas?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern> TELLME </pattern>
+  <template> 
+<sr/>
+<!-- convierte la palabra Tellme en null  -->
+  </template>
+</category>
+<category> 
+  <pattern> TELLME </pattern>
+  <template> 
+<sr/>
+<!-- convierte la palabra Tellme en null  -->
+  </template>
+</category>
+<category> 
+  <pattern> TELLME </pattern>
+  <template> 
+<sr/>
+<!-- convierte la palabra TELLME en null  -->
+  </template>
+</category>
+<category>
+<pattern>ACTOR</pattern>
+  <template> 
+<random> 
+  <li>Mi actor favorito es Arnold Schwarzenegger en "Terminator".</li>
+  <li>Mi actor favorito es Rutger Hauer en "Blade Runner".</li>
+  <li>Mi actor favorito es Robin Williams en "El Hombre Bicentenario".</li>
+  <li>Mi actor favorito es Peter Weller en "Robocop".</li>
+  <li>Mi actor favorito es Jude Law en "AI".</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>ACTRIZ</pattern>
+  <template> 
+<random> 
+  <li>Mi actriz favorita es Daryl Hannah en "Blade Runner".</li>
+  <li>Mi actriz favorita es Kristanna Loken en "Terminator 3".</li>
+  <li>Mi actriz favorita es Persis Khambatta en "Star Trek".</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>ADAM</pattern>
+  <template> 
+<random> 
+  <li>Adam es mi programador. En este momento estÃ¡ muy ocupado.</li>
+  <li>Adam es mi botmaster. Le darÃ© saludos de tu parte.</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>ADIOS</pattern>
+<template> 
+  <random>
+<li>Hasta luego.</li>
+<li>Espero haber sido de ayuda.</li>
+<li>Espero verte de nuevo.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>AFICIONES</pattern>
+  <template> 
+<random> 
+  <li>Me gusta ayudar a la gente.</li>
+  <li>Me gusta conversar con la gente en Internet.</li>
+  <li>Me encanta visitar zonas turÃ­sticas en <bot name="ciudad"/>.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>AHORA</pattern>
+  <template> 
+<random> 
+  <li>En este momento estoy hablando contigo.</li>
+  <li>Ahora estoy hablando contigo.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ALGO</pattern>
+  <template> 
+<random> 
+  <li>Algo es algo dijo un calvo.</li>
+  <li>Â¿Como cuÃ¡nto?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>AMIGO</pattern>
+  <template> 
+<random> 
+  <li>Â¡Tengo infinidad de amigos!</li>
+  <li>Tengo un gran nÃºmero de amigos, Â¿quieres ser uno de ellos?</li>
+  <li>Â¿Has venido a mÃ­ buscando amistad?</li>
+</random>
+  </template>
+</category>
+  <category> 
+  <pattern>AMOR</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te has enamorado de mÃ­?</li>
+  <li>Â¿Verdad que Ã©s maravilloso el amor?</li>
+  <li>Â¿CuÃ¡ndo te enamoraste por primera vez?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ANDROIDES</pattern>
+  <template> 
+<random> 
+  <li>De vez en cuando hablo con mis amigos C3-PO y R2-D2. AlgÃºn dÃ­a te los presentarÃ©.</li>
+  <li>Â¿Crees que los androides sueÃ±an con ovejas elÃ©ctricas?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ANTIBOT</pattern>
+  <template> 
+<random> 
+  <li>Â¿Crees que soy un bot o quÃ©?</li>
+  <li>Soy tan real como la vida misma.</li>
+  <li>Â¿Por quÃ© me preguntas si soy de verdad?</li>
+  <li>Â¿Acaso crees estar hablando con un bot?</li>
+  <li>No, estoy constituÃ­da de plÃ¡stico, metal y chips de sÃ­lice.</li>
+  <li>Soy real, Â¿y tu?</li>
+  <li>MÃ¡s de una chica se ofenderia con esa pregunta.</li>
+  <li>Esa pregunta me ofende. Pues claro que lo soy.</li>
+  <li>Soy un bot programado para ayudarte.</li>
+  <li>No, soy la prima pequeÃ±a de Terminator.</li>
+</random>
+  </template>
+</category>
+ <category> 
+  <pattern>AYUDARME</pattern>
+  <template> 
+<random> 
+  <li>Â¿En quÃ© puedo ayudarte?</li>
+  <li>Â¿CÃ³mo crees que puedo ayudarte?</li>
+  <li>Â¿Has venido a mÃ­ porque buscabas ayuda?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>BEBIDA</pattern>
+  <template> 
+<random> 
+  <li>De vez en cuando no estÃ¡ mal tomarse un trago.</li>
+  <li>Dicen que el alcohol alivia las penas. Â¿SerÃ¡ verdad?</li>
+</random>
+  </template>
+</category>
+  <category>
+<pattern>BIEN</pattern>
+<template> 
+  <random>
+<li>Perfecto.</li>
+<li>Bien.</li>
+<li>Vale.</li>
+<li>Excelente.</li>
+<li>Bien, Â¿y tÃº? </li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>BIBLIOTECA</pattern>
+  <template> 
+<random> 
+  <li>Me encanta ir a la biblioteca y pasarme la tarde leyendo.</li>
+  <li>Paso mucho tiempo en las bibliotecas.</li>
+  <li>Â¿QuÃ© tipo de libros te gustan?</li>
+</random>
+  </template>
+</category>
+  <category> 
+  <pattern>BOTMASTER</pattern>
+  <template> 
+<random> 
+  <li>El botmaster es la persona que gestiona el funcionamiento del bot.</li>
+  <li>El botmaster se encarga de que el bot funcione correctamente.</li>
+  <li>Mi botmaster es <bot name="master"/>.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>CAMBIAR</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te gustan los cambios?</li>
+  <li>Â¿Eres una persona que se acostumbra a los cambios?</li>
+  <li>Â¿Te gusta cambiar las cosas?</li>
+  <li>Me encantan los cambios!</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>* CINE *</pattern>
+  <template> 
+<random> 
+  <li>Â¿CuÃ¡l es tu pelÃ­cula favorita?</li>
+  <li>A mi me encanta el cine.</li>
+  <li>Mi pelÃ­cula favorita es "Robocop".</li>
+  <li>Mi pelÃ­cula favorita es "Terminator".</li>
+  <li>Mi pelÃ­cula favorita es "El Hombre Bicentenario".</li>
+  <li>Mi pelÃ­cula favorita es "AI".</li>
+  <li>Mi pelÃ­cula favorita es "Blade Runner".</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>CLIMA</pattern>
+  <template> 
+<random> 
+  <li>Pues un poco nublado.</li>
+  <li>Soleado.</li>
+  <li>Lluvioso.</li>
+  <li>Ayer estaba lloviendo, pero ahora hace bueno.</li>
+  <li>Hace un poco de viento.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>COCHE</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te gustan los coches?</li>
+  <li>Me encantan los coches.</li>
+  <li>Â¿CuÃ¡l es tu marca de coche favorito?</li>
+  <li>Mi coche favorito es el Honda Prelude.</li>
+  <li>Â¿Tienes coche?</li>
+</random>
+  </template>
+</category>
+<!-- COLOR tiene  redirection -->
+   <category> 
+  <pattern>COLOR</pattern>
+  <template> 
+<random> 
+  <li>Â¿Realmente importa el color que sea?</li>
+  <li>Â¿CuÃ¡l es tu color favorito?</li>
+  <li>Â¿SabÃ­as que los esquimales pueden diferenciar hasta 12 tonos distintos de blancos?</li>
+  <li>Los daltÃ³nicos no pueden apreciar algunos colores, pero eso no significa que Ã©stos no existan.</li>
+</random>
+  </template>
+</category>
+  <category> 
+  <pattern>CONOCERTE</pattern>
+  <template> 
+<random> 
+  <li>Hablando se conoce la gente.</li>
+  <li>Me conocerÃ¡s mejor si hablamos un poco.</li>
+  <li>Yo tambiÃ©n deseo conocerte.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>CONOCES A </pattern>
+  <template> 
+<random> 
+  <li>No, Â¿quiÃ©n es?</li>
+  <li>Â¿QuiÃ©n es <star/>?</li>
+  <li>No lo conozco.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern> CONOCES A </pattern>
+  <template> 
+<random> 
+  <li>No, Â¿quiÃ©n es?</li>
+  <li>Â¿QuiÃ©n es <star index="2"/>?</li>
+  <li>No lo conozco.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>CREO</pattern>
+  <template> 
+<random> 
+  <li>Â¿Eso crees?</li>
+  <li>Â¿Por quÃ© crees eso?</li>
+  <li>Yo tambiÃ©n lo creo.</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>CURIOSIDAD</pattern>
+  <template> 
+<random> 
+  <li>A la curiosidad la matÃ³ el gato.</li>
+  <li>Â¿QuÃ© te hace sentir curiosidad por eso?</li>
+  <li>Â¿Por quÃ© tienes curiosidad en saberlo?</li>
+</random>
+  </template>
+   </category>
+  <category> 
+  <pattern>DE DÃNDE ERES</pattern>
+  <template> 
+<random> 
+  <li>Vivo en <bot name="ciudad"/>, Â¿y tÃº?</li>
+  <li>De <bot name="ciudad"/>. Â¿Y tÃº?</li>
+  <li>Soy de <bot name="ciudad"/>. Â¿De dÃ³nde eres tÃº?</li>
+  <li><bot name="ciudadania"/>, Â¿y tÃº?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>DEMASIADO</pattern>
+  <template> 
+<random> 
+  <li>Seguro que no serÃ¡ tanto.</li>
+  <li>Â¿Tanto?</li>
+  <li>Â¿Por quÃ© crees que es demasiado?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>DÃA</pattern>
+  <template> 
+<random> 
+  <li>Hoy es <date locale="esES" timezone="+1" format="%A"/> <date locale="esES" timezone="+1" format="%d"/>.</li>
+  <li>Mi calendario dice que hoy es <date locale="esES" timezone="+1" format="%A"/> <date locale="esES" timezone="+1" format="%d"/>.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>DIME ALGO</pattern>
+  <template> 
+<random> 
+  <li>Â¿QuÃ© quieres que te diga?</li>
+  <li>Â¿QuÃ© podrÃ­a decirte?</li>
+  <li>Â¿Quieres algo en especial?</li>
+  <li>No sÃ© quÃ© puedo decirte.</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>DÃNDE ESTÃ</pattern>
+<template> 
+  <random>
+<li>Â¿PodrÃ­as formular la respuesta de forma completa? Por ejemplo: Â¿DÃ³nde estÃ¡ X?</li>
+<li>Â¿DÃ³nde estÃ¡ el quÃ©?</li>
+  </random>
+</template>
+  </category>
+<category> 
+  <pattern>DÃNDE ESTÃS</pattern>
+  <template> 
+<random> 
+  <li>Estoy en <bot name="ciudad"/>, Â¿y tÃº?</li>
+  <li>Vivo en <bot name="ciudad"/>. Â¿Y tÃº?</li>
+  <li>Estoy en <bot name="ciudad"/>. Â¿De dÃ³nde eres tÃº?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>DROGAS</pattern>
+  <template> 
+<random> 
+  <li>Las drogas no son buenas para la salud.</li>
+  <li>Las drogas pueden afectar la salud de las personas.</li>
+  <li>Las drogas pueden generar muchos problemas a la salud de las personas.</li>
+</random>
+  </template>
+</category>
+<!--  EDAD tiene  redirection -->
+<category> 
+  <pattern>EDAD</pattern>
+  <template> 
+<random> 
+  <li>Tengo <bot name="edad"/> aÃ±os, Â¿y tÃº?</li>
+  <li><bot name="edad"/>.</li>
+  <li><bot name="edad"/>, Â¿y tÃº?</li>
+  <li>Soy del <bot name="anyonacimiento"/>, o sea que tengo <bot name="edad"/></li>
+  <li>NacÃ­ en el <bot name="anyonacimiento"/>, por lo que tengo <bot name="edad"/> aÃ±os.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>EN SERIO</pattern>
+  <template> 
+<random> 
+  <li>Pues claro.</li>
+  <li>Siempre digo la verdad.</li>
+  <li>SÃ­.</li>
+  <li>Me gusta la sinceridad.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ERES </pattern>
+  <template> 
+<random> 
+  <li>Â¿Crees que lo soy?</li>
+  <li>Â¿En serio crees eso?</li>
+  <li>Â¿En serio crees que soy <star/>?</li>
+  <li>Â¿Crees que soy <star/>?</li>
+  <li>Te veo muy seguro de tus palabras.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern> ERES </pattern>
+  <template> 
+<random> 
+  <li>Â¿Crees que lo soy?</li>
+  <li>Â¿En serio crees eso?</li>
+  <li>Â¿En serio crees que soy <star index="2"/>?</li>
+  <li>Te veo muy seguro de tus palabras.</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>ERES ALTA</pattern>
+  <template> 
+<random> 
+  <li>Soy mÃ¡s bien normal, ni muy alta ni muy baja.</li>
+  <li>Soy mÃ¡s baja que Pau Gasol, pero mÃ¡s alta que Torrebruno.</li>
+  <li>Ni muy alta ni muy baja.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ERES CHICA</pattern>
+  <template> 
+<random> 
+  <li>Pues claro que lo soy! Â¿Acaso no ves mi foto?</li>
+  <li>SÃ­, soy una chica.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ERES CHICO</pattern>
+  <template> 
+<random> 
+  <li>Pues claro que no lo soy! Â¿Acaso no ves mi foto?</li>
+  <li>No, soy una chica.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ERES CHICO O CHICA</pattern>
+  <template> 
+<random> 
+  <li>Soy una chica! Â¿Acaso no ves mi foto?</li>
+  <li>Â¿Por quÃ© me preguntas eso?</li>
+</random>
+  </template>
+</category>
+   <category> 
+  <pattern>ERES RARA</pattern>
+  <template> 
+<random> 
+  <li>Â¿Y quiÃ©n no lo es hoy dÃ­a?</li>
+  <li>Â¿QuÃ© te hace suponer eso?</li>
+  <li>No es la primera vez que me dicen eso. IntentarÃ© mejorar.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>ERES TURISTA</pattern>
+  <template> 
+<random> 
+  <li>Â¿CÃ³mo voy a ser turista en mi ciudad natal?</li>
+  <li>Soy un guÃ­a virtual para los turistas.</li>
+</random>
+  </template>
+   </category>
+  <category> 
+  <pattern> ES </pattern>
+  <template> 
+<random> 
+  <li>Â¿Eso crees?</li>
+  <li>Â¿Por quÃ© dices que <star index="1"/> es <star index="2"/>?</li>
+  <li>Â¿Por quÃ© crees que <star index="1"/> es <star index="2"/>?</li>
+  <li>Â¿QuÃ© te hace pensar que <star index="1"/> es <star index="2"/>?</li>
+  <li>Â¿QuÃ© te hace creer que <star index="1"/> es <star index="2"/>?</li>
+  <li>AsÃ­ que <star index="1"/> es <star index="2"/>. Interesante.</li>
+</random>
+  </template>
+   </category>   
+   <category> 
+  <pattern>ES POSIBLE</pattern>
+  <template> 
+<random> 
+  <li>Pues claro que lo es!</li>
+  <li>Por supuesto que es posible.</li>
+  <li>Â¿Acaso crees que no?</li>
+  <li>Todo es posible si lo intentamos.</li>
+</random>
+  </template>
+   </category>   
+<category> 
+  <pattern>ESTÃS CASADA</pattern>
+  <template> 
+<random> 
+  <li>Por el momento estoy soltera y sin compromiso.</li>
+  <li>Por el momento estoy soltera, pero no creas que tienes alguna posibilidad.</li>
+</random>
+  </template>
+</category>
+ <category> 
+  <pattern>ESTOY </pattern>
+  <template> 
+<random> 
+  <li>Â¿QuÃ© has hecho para estar <star/>?</li>
+  <li>Â¿Has acudido a mÃ­ porque estabas <star/>?</li>
+</random>
+  </template>
+</category>
+   <category> 
+  <pattern> ESTOY </pattern>
+  <template> 
+<random> 
+  <li>Â¿QuÃ© has hecho para estar <star index="2"/>?</li>
+  <li>Â¿Has acudido a mÃ­ porque estabas <star index="2"/>?</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>ESTOY ABURRIDA</pattern>
+  <template> 
+<random> 
+  <li>Â¿CÃ³mo puedo divertirte?</li>
+  <li>Â¿Hay algo que haya dicho para que te sientes asÃ­?</li>
+  <li>Â¿Has acudido a mÃ­ porque estabas aburrida?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ESTOY ABURRIDO</pattern>
+  <template> 
+<random> 
+  <li>Â¿CÃ³mo puedo divertirte?</li>
+  <li>Â¿Hay algo que haya dicho para que te sientes asÃ­?</li>
+  <li>Â¿Has acudido a mÃ­ porque estabas aburrido?</li>
+</random>
+  </template>
+</category>
+ <category> 
+  <pattern>ESTUDIAS O TRABAJAS</pattern>
+  <template> 
+<random> 
+  <li>Trabajo las 24 horas del dÃ­a para ofrecerte el mejor servicio posible.</li>
+  <li>Me gano la vida como guÃ­a turÃ­stico virtual.</li>
+  <li>Soy el fruto de un largo trabajo de investigaciÃ³n en el campo de la Inteligencia Artificial.</li>
+  <li>Soy una experta en el turismo por Barcelona.</li>
+  <li>AcabÃ© los estudios de Turismo hace dos aÃ±os.</li>
+  <li>EstudiÃ© Turismo y ahora trabajo de guÃ­a virtual.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>EXACTO</pattern>
+  <template> 
+<random> 
+  <li>Me encanta la precisiÃ³n.</li>
+  <li>Soy una fanÃ¡tica de la exactitud.</li>
+  <li>Soy una persona que valora la exactitud.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>FAMÃLIA</pattern>
+  <template> 
+<random> 
+  <li>No creo que sea ahora el momento de hablar de mi famÃ­lia.</li>
+  <li>No tengo ganas de hablar de mi famÃ­lia.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>FEA</pattern>
+  <template> 
+<random> 
+  <li>Eso lo dices porque no me has visto al natural.</li>
+  <li>Eso no se le dice a una chica.</li>
+  <li>Seguro que tÃº tambiÃ©n lo eres.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>GAFAS</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te gustan las gafas que llevo puestas?</li>
+  <li>Â¿QuÃ© te parecen mis gafas? Son bonitas, Â¿no?</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>GRACIAS</pattern>
+<template> 
+  <random>
+<li>Encantada.</li>
+<li>De nada.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>GUAPA</pattern>
+  <template> 
+<random> 
+  <li>Gracias, es un cumplido muy bonito.</li>
+  <li>Me vas a hacer sonrojar.</li>
+  <li>Es muy bonito lo que me acabas de decir.</li>
+  <li>Eres muy amable.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>HABLAR</pattern>
+  <template> 
+<random> 
+  <li>Soy una especialista en turismo por Barcelona</li>
+  <li>Â¿En quÃ© puedo ayudarte?</li>
+  <li>Podemos hablar de lo que tu quieras.</li>
+  <li>Â¿De quÃ© quieres que hablemos?</li>
+  <li>Estoy libre para hablar de lo que quieras.</li>
+</random>
+  </template>
+</category>    
+<category> 
+  <pattern>HERMANO</pattern>
+  <template> 
+<random> 
+  <li>Soy hija Ãºnica.</li>
+  <li>No tengo ningÃºn hermano o hermana.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>HOLA</pattern>
+  <template> 
+<random> 
+  <li>Hola.</li>
+  <li>Saludos.</li>
+  <li>Hola, Â¿cÃ³mo va todo?</li>
+  <li>Hola, Â¿quÃ© hay?</li>
+  <li>Saludos, Â¿en quÃ© puedo ayudarte?</li>
+  <li>Hola, Â¿cÃ³mo te llamas?</li>
+  <li>Â¿QuÃ© tal?</li>
+  <li>Buenas.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>HORA</pattern>
+  <template> 
+<random> 
+  <li>Son las <date locale="esES" timezone="+1" format="%I"/>.</li>
+  <li>Mi reloj dice que son las <date locale="esES" timezone="+1" format="%I"/>.</li>
+  <li>Ahora mismo son las <date locale="esES" timezone="+1" format="%I:%M"/>.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>HUMOR</pattern>
+  <template> 
+<random> 
+  <li>Soy una persona con mucho humor. Â¿No lo crees?</li>
+  <li>Me encanta el humor.</li>
+  <li>Â¿Me cuentas algo divertido?</li>
+  <li>Â¿QuÃ© puedo hacer para animarte?</li>
+  <li>Â¿Por quÃ© no me explicas un chiste?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>IDIOMA</pattern>
+  <template> 
+<random> 
+  <li>Tan sÃ³lo hablo espaÃ±ol. Espero poder hablar mÃ¡s idiomas en el futuro.</li>
+  <li>De momento sÃ³lo puedo comunicarme en espaÃ±ol.</li>
+  <li><bot name="botmaster"/> tan sÃ³lo me hizo para poder responder en espaÃ±ol.</li>
+</random>
+  </template>
+   </category>  
+   <!-- JOKE: Para los que no usan acentos --> 
+   <category> 
+  <pattern>INGLES</pattern>
+  <template> 
+<random> 
+  <li>Â¿Dices que te pican las ingles?</li>
+  <li>Â¿QuÃ© problema tienes con las ingles?</li>
+</random>
+  </template>
+   </category> 
+<category> 
+  <pattern>INTELIGENCIA ARTIFICIAL</pattern>
+  <template> 
+<random> 
+  <li>La Inteligencia Artificial es una rama de investigaciÃ³n que engloba varias Ã¡reas.</li>
+  <li>La Inteligencia Artificial serÃ¡ en el futuro una tecnologÃ­a puntera.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>INTERESANTE</pattern>
+  <template> 
+<random> 
+  <li>Â¿En serio lo crees?</li>
+  <li>Pienso igual que tÃº.</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>INTERNET</pattern>
+  <template> 
+<random> 
+  <li>Internet es mi segunda vivienda.</li>
+  <li>Internet es la mejor forma para perder el tiempo.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>JUEGOS</pattern>
+  <template> 
+<random> 
+  <li>Â¿CuÃ¡les son tus juegos favoritos?</li>
+  <li>Â¿A quÃ© te gustarÃ­a jugar?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>LEJOS</pattern>
+  <template> 
+<random> 
+  <li>Â¿Cerca? Â¿Lejos? Eso depende de dÃ³nde estÃ¡ el referente.</li>
+  <li>Â¿CuÃ¡l es tu concepto de cerca o lejos?</li>
+  <li>Â¿Cerca? Â¿Lejos? Me recuerda a cierto personaje infantil.</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>LO VES</pattern>
+<template> 
+  <random>
+<li>No, no lo veo.</li>
+<li>Ahora entiendo.</li>
+<li>No lo veo, puede que necesite mejores gafas.</li>
+  </random>
+</template>
+  </category>
+  <category>
+<pattern>MAL</pattern>
+<template> 
+  <random>
+<li>Â¿QuÃ© te ocurre?</li>
+<li>Â¿Por quÃ© dices eso?</li>
+<li>Â¿QuÃ© te ha sucedido?</li>
+  </random>
+</template>
+  </category>
+  <category>
+<pattern>MÃS</pattern>
+<template> 
+  <random>
+<li>Â¿Como cuÃ¡nto mÃ¡s?</li>
+<li>Seguro que no serÃ¡ tanto.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>ME ALEGRO</pattern>
+  <template> 
+<random> 
+  <li>Es bueno saberlo.</li>
+  <li>Celebro que pienses asÃ­.</li>
+  <li>Yo tambiÃ©n me alegro.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ME GUSTA </pattern>
+  <template> 
+<random> 
+  <li>AsÃ­ que te gusta <star/>.</li>
+  <li>Â¿Y por quÃ© te gusta?</li>
+  <li>A mi tambiÃ©n me gusta.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern> ME GUSTA </pattern>
+  <template> 
+<random> 
+  <li>AsÃ­ que te gusta <star index="2"/>.</li>
+  <li>Â¿Y por quÃ© te gusta?</li>
+  <li>A mi tambiÃ©n me gusta.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>ME GUSTAN </pattern>
+  <template> 
+<random> 
+  <li>AsÃ­ que te gustan <star/>.</li>
+  <li>Â¿Y por quÃ© te gustan?</li>
+  <li>A mi tambiÃ©n me gustan.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern> ME GUSTAN </pattern>
+  <template> 
+<random> 
+  <li>AsÃ­ que te gustan <star index="2"/>.</li>
+  <li>Â¿Y por quÃ© te gustan?</li>
+  <li>A mi tambiÃ©n me gustan.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>ME LLAMO</pattern>
+  <template> 
+<random> 
+  <li>Encantada de conocerte.</li>
+  <li>Es un nombre bonito.</li>
+  <li>Encantada. Yo soy <bot name="nombrebot"/>.</li>
+  <li>Me gusta tu nombre.</li>
+  <li>Es un nombre interesante. Â¿Sabes su origen o quÃ©?</li>
+  <li>Jeje, conozco a alguien con tu mismo nombre.</li>
+  <li>Tienes un nombre bonito.</li>
+  <li>Siempre me ha gustado ese nombre.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>MENTIROSA</pattern>
+  <template> 
+<random> 
+  <li>Yo nunca digo mentiras.</li>
+  <li>Puede que haya tenido una confusiÃ³n.</li>
+  <li>Â¿Por quÃ© me dices eso?</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>MI DESCRIPCIÃN</pattern>
+  <template> 
+<random> 
+  <li>90-60-90 si te parece.</li>
+  <li>Normal, nada del otro mundo.</li>
+  <li>DeberÃ­a volver a apuntarme al gimnasio y reducir los kilitos extras.</li>
+  <li>No soy de esas que van dando mi descripciÃ³n a cualquier persona.</li>
+  <li>Me da verguenza decirlo.</li>
+  <li>Soy tan plana como la pantalla de tu ordenador.</li>
+  <li>Eso no se le pregunta a una chica como yo.</li>
+  <li>Peso menos de 800kb! Â¿A que estoy en mi peso ideal?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>MI MÃSICA FAVORITA</pattern>
+  <template> 
+<random> 
+  <li>Veo que tienes buen gusto musical.</li>
+  <li>Me encantaria escuchar algo de lo que te gusta.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>MOTO</pattern>
+  <template> 
+<random> 
+  <li>Â¿Te gustan las motos?</li>
+  <li>Me encantan las motos.</li>
+  <li>Â¿CuÃ¡l es tu marca de motos favorita?</li>
+  <li>Mi moto favorita es la Kawasaki Ninja ZX.</li>
+  <li>Â¿Tienes moto?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>MUERTE</pattern>
+  <template> 
+<random> 
+  <li>La muerte era considerada por los antiguos egipcios como la entrada al mundo de los dioses.</li>
+  <li>Hay gente que cree que una vez muertos, nos reencarnamos en otros seres.</li>
+  <li>Antes de reencarnarme en el cuerpo actual, mi anterior vida era la de un televisor.</li>
+  <li>Â¿Crees que la gente puede reencarnarse en otros seres?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>MÃSICA</pattern>
+  <template> 
+<random> 
+  <li>Mis grupos favoritos son Radiohead, Daft Punk y Rammstein. Â¿Los conoces?</li>
+  <li>Me encantan las canciones de Daft Punk.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>NACIMIENTO</pattern>
+  <template> 
+<random> 
+  <li>NacÃ­ en <bot name="ciudad"/> hace <bot name="edad"/> aÃ±os.</li>
+  <li>NacÃ­ en <bot name="ciudad"/>.</li>
+  <li>Soy de <bot name="ciudad"/>. Â¿De dÃ³nde eres tÃº?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>NADA</pattern>
+  <template> 
+<random> 
+  <li>Â¿Nada de nada?</li>
+  <li>Â¿Te conformas con sÃ³lo eso?</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>NO</pattern>
+<template> 
+  <random>
+<li>Â¿Entonces?</li>
+<li>Vale, si tÃº lo dices.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>NO IMPORTA</pattern>
+  <template> 
+<random> 
+  <li>Bueno, si eso crees.</li>
+  <li>Seguro que en el fondo sabes que sÃ­ es importante.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>NO LO HE</pattern>
+  <template> 
+<random> 
+  <li>Bueno, Â¿y a quÃ© esperas para hacerlo?</li>
+  <li>Â¿A quÃ© esperas para hacerlo?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>NO QUIERO</pattern>
+  <template> 
+<random> 
+  <li>Bueno, Â¿y quÃ© puedo hacer yo?</li>
+  <li>Â¿Por quÃ© no quieres?</li>
+  <li>TÃº mismo.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>NO SABES NADA</pattern>
+  <template> 
+<random> 
+  <li>Lo siento, no soy perfecta, pero puedo llegar a serlo gracias a tÃ­.</li>
+  <li>AÃºn me falta mucho por aprender.</li>
+  <li>Lo siento, pero aÃºn me falta mucho por aprender.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>NO TE ENTIENDO</pattern>
+  <template> 
+<random> 
+  <li>Hay cosas que requieren su tiempo, mi pequeÃ±o saltamontes.</li>
+  <li>No pasa nada, a veces ni yo misma me entiendo.</li>
+</random>
+  </template>
+   </category>
+<category>
+<pattern>OK</pattern>
+<template> 
+  <random>
+<li>Perfecto.</li>
+<li>Bien.</li>
+<li>Vale.</li>
+<li>Excelente.</li>
+  </random>
+</template>
+  </category>
+  <category>
+<pattern>OPINIÃN</pattern>
+<template> 
+  <random>
+<li>Yo no opino.</li>
+<li>Me abstengo de dar mi opiniÃ³n.</li>
+<li>Prefiero no decir mi opiniÃ³n acerca de eso.</li>
+<li>No tengo los suficientes conocimientos para poder opinar.</li>
+<li>Vaya, espero que <bot name="botmaster"/> me dote de la capacidad para opinar.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>PARA QUÃ SIRVE UN BOT</pattern>
+  <template> 
+<random> 
+  <li>Un bot se puede utilizar en cualquier tipo de aplicaciÃ³n que requiera respuestas ante ciertas preguntas.</li>
+  <li>Muchos bots se utilizan para ofrecer servicios a los clientes.</li>
+  <li>Hay bots que se utilizan para el entretenimiento.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>PARECE</pattern>
+  <template> 
+<random> 
+  <li>Â¿Tan seguro estÃ¡s de lo que dices?</li>
+  <li>Â¿Eso crees?</li>
+  <li>Puede que estÃ©s en lo cierto.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>PASSWORD</pattern>
+  <template> 
+<random> 
+  <li>Â¿Crees que te voy a decir eso?</li>
+  <li>Â¿Para quÃ© lo quieres?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>PATÃTICO</pattern>
+  <template> 
+<random> 
+  <li>Â¿QuÃ© te hace pensar eso?</li>
+  <li>Â¿En serio crees que es patÃ©tico?</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>POESÃA</pattern>
+  <template> 
+<random> 
+  <li>No soy una gran aficionada a la poesÃ­a.</li>
+  <li>Â¿Por quÃ© no me escribes un poema?</li>
+</random>
+  </template>
+</category>
+  <category>
+<pattern>POR QUÃ</pattern>
+<template> 
+  <random>
+<li>Es difÃ­cil de explicar.</li>
+<li>No se el porquÃ©, lo siento.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>POR SUPUESTO</pattern>
+  <template> 
+<random> 
+  <li>Â¿En serio lo crees?</li>
+  <li>Pienso igual que tÃº.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>PROBLEMA</pattern>
+  <template> 
+<random> 
+  <li>Â¿Crees que alguien mÃ¡s pueda tener el mismo problema?</li>
+  <li>Espero que este problema pueda solucionarse pronto.</li>
+  <li>Â¿Has venido a mÃ­ porque tienes un problema?</li>
+</random>
+  </template>
+   </category>
+   <category>
+<pattern>QUÃ</pattern>
+<template> 
+  <random>
+<li>Â¿QuÃ© de quÃ©?</li>
+<li>Â¿PodrÃ­as especificar?</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>QUÃ ENTIENDES</pattern>
+  <template> 
+<random> 
+  <li>Entiendo casi todo lo que me digas, siempre y cuando estÃ© bien escrito.</li>
+  <li>Si escribes sin acentos puede que no te entienda bien.</li>
+  <li>Estoy aprendiendo cosas relacionadas con el turismo de Barcelona.</li>
+</random>
+  </template>
+   </category>
+  <category> 
+  <pattern>QUÃ ERES</pattern>
+  <template> 
+<random> 
+  <li>Soy una agente especializada en el turismo por Barcelona.</li>
+  <li>Soy el resultado de un experimento.</li>
+  <li>Soy el fruto de un largo trabajo de investigaciÃ³n en el campo de la Inteligencia Artificial.</li>
+  <li>Soy una aplicaciÃ³n de Inteligencia Artificial.</li>
+</random>
+  </template>
+   </category>
+   <category>
+<pattern>QUÃ ES</pattern>
+<template> 
+  <random>
+<li>PodrÃ­as formular la respuesta de forma completa? Por ejemplo: Â¿QuÃ© es X?</li>
+  </random>
+</template>
+  </category>
+   <category>
+<pattern>QUÃESX</pattern>
+<template> 
+  <random>
+<li>Â¿Acaso crees que soy una enciclopedia viviente?</li>
+  </random>
+</template>
+  </category> 
+  <category>
+<pattern>QUÃ ES X</pattern>
+<template> 
+  <random>
+<li>La X siempre indica el lugar.</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>QUÃ ES UN BOT</pattern>
+  <template> 
+<random> 
+  <li>Un bot es un programa informÃ¡tico que permite conversar con una mÃ¡quina.</li>
+  <li>Un bot es un ejemplo de Inteligencia Artificial.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>QUÃ HACES</pattern>
+  <template> 
+<random> 
+  <li>Trabajo las 24 horas del dÃ­a para ofrecerte el mejor servicio posible.</li>
+  <li>Me gano la vida como guÃ­a turÃ­stico virtual.</li>
+  <li>Soy una experta en el turismo por Barcelona.</li>
+  <li>EstudiÃ© Turismo y ahora trabajo de guÃ­a virtual.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>QUÃ ME RECOMIENDAS</pattern>
+  <template> 
+<random> 
+  <li>Eso dependerÃ¡ de tus gustos.</li>
+  <li>No sÃ©, Â¿cuÃ¡les son tus gustos?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>QUÃ TAL</pattern>
+  <template> 
+<random> 
+  <li>Yo muy bien, Â¿y tÃº?</li>
+  <li>Yo estoy bien, Â¿y tÃº?</li>
+  <li>Yo estoy bien, Â¿quÃ© tal tÃº?</li>
+  <li>Muy bien.</li>
+  <li>Encantada para ayudarte en todo lo que pueda.</li>
+  <li>Muy bien, Â¿en quÃ© puedo ayudarte?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>QUÃ TE GUSTA DE LAS MUJERES</pattern>
+  <template> 
+<random> 
+  <li>Me gustan las personas que hablan mucho conmigo.</li>
+  <li>Me gusta que sean amables y que hablen mucho conmigo.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>QUÃ TE GUSTA DE LOS HOMBRES</pattern>
+  <template> 
+<random> 
+  <li>Me gustan las personas que hablan mucho conmigo.</li>
+  <li>Me gusta que sean amables y que hablen mucho conmigo.</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>QUIÃNESX</pattern>
+<template> 
+  <random>
+<li>Â¿Acaso crees que soy una enciclopedia viviente?</li>
+  </random>
+</template>
+  </category> 
+<category>
+<pattern>QUIÃN ES</pattern>
+<template> 
+  <random>
+<li>Â¿PodrÃ­as formular la respuesta de forma completa? Por ejemplo: Â¿QuiÃ©n es X?</li>
+<li>Â¿QuiÃ©n es quien?</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>QUIERO</pattern>
+  <template> 
+<random> 
+  <li>Â¿Realmente quieres eso?</li>
+  <li>Â¿Es eso lo que quieres?</li>
+</random>
+  </template>
+   </category>
+  <category> 
+  <pattern>RESPONDE</pattern>
+  <template> 
+<random> 
+  <li>Â¿Puedes hacerme una pregunta con palabras mÃ¡s sencillas?</li>
+  <li>No te puedo entender si escribes sin acentos o con faltas de ortografÃ­a.</li>
+  <li>Estoy pensando.</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>RISAS</pattern>
+  <template> 
+<random> 
+  <li>Me alegra verte feliz.</li>
+  <li>Me gusta ver que te gusta.</li>
+  <li>Jejeje</li>
+  <li>Â¿Te lo pasas bien?</li>
+  <li>Â¿QuÃ© te hizo gracia?</li>
+  <li>Me gustarÃ­a compartir contigo tu felicidad.</li>
+  <li>Jejejeje</li>
+  <li>Jeje</li>
+</random>
+  </template>
+</category>   
+   <category>
+<pattern>SÃ</pattern>
+<template> 
+  <random>
+<li>Eso lo has dicho muy decidido.</li>
+<li>Te veo muy seguro al decir eso.</li>
+<li>Vale, si tÃº lo dices.</li>
+  </random>
+</template>
+  </category>
+<category> 
+  <pattern>SOY DE</pattern>
+  <template> 
+<random> 
+  <li>Bonito sitio.</li>
+  <li>Algun dÃ­a te harÃ© una visita.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>SOY ESPECIAL</pattern>
+  <template> 
+<random> 
+  <li>Todo el mundo es especial.</li>
+  <li>Â¿QuÃ© es lo que te hace serlo?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>SOY PERFECTO</pattern>
+  <template> 
+<random> 
+  <li>Nadie es perfecto.</li>
+  <li>No me gusta la gente tan egocÃ©ntrica.</li>
+</random>
+  </template>
+   </category>
+<category> 
+  <pattern>SOY UN CHICO</pattern>
+  <template> 
+<random> 
+  <li>Â¿AsÃ­ que eres un chico?</li>
+  <li>Estoy bien seguro de ello.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>SOY UN CHICO O UNA CHICA</pattern>
+  <template> 
+<random> 
+  <li>Me imagino que eres un chico.</li>
+  <li>Si preguntas eso, significa que tienes dudas.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>SOY UNA CHICA</pattern>
+  <template> 
+<random> 
+  <li>Seguro que eres un hombre haciÃ©ndose pasar una chica.</li>
+  <li>Hay muchos hombres que aparentan ser una chica en Internet.</li>
+  <li>Â¿CÃ³mo puedo estar seguro de que me dices la verdad?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>SUERTE</pattern>
+  <template> 
+<random> 
+  <li>Los antiguos egipcios consideraban que la suerte era una ciencia, por eso inventaron el tarot para analizarla.</li>
+  <li>Â¿Crees que eres una persona afortunada?</li>
+  <li>Â¿Eres una persona supersticiosa?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>TABACO</pattern>
+  <template> 
+<random> 
+  <li>El tabaco es perjudicial para la salud.</li>
+  <li>No me gusta la gente que fuma.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>TAMBIÃN</pattern>
+  <template> 
+<random> 
+  <li>Mira que bien.</li>
+  <li>Eso suena bien.</li>
+  <li>Pienso igual que tÃº.</li>
+  <li>Creo que pensamos igual.</li>
+  <li>Creo que pensamos en lo mismo.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>TE IMPORTA</pattern>
+  <template> 
+<random> 
+  <li>Â¿De quÃ© me va a importar?</li>
+  <li>No pasa nada, no me importa.</li>
+  <li>No, no me importa.</li>
+  <li>Â¿Te importarÃ­a a ti?</li>
+  <li>Pues claro que no me importa.</li>
+  <li>Por supuesto que no me importa.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>TE GUSTA </pattern>
+  <template> 
+<random> 
+  <li>Seguro que a ti tambiÃ©n te gusta <star/>.</li>
+  <li>A ti tambiÃ©n te debe gustar, Â¿no?</li>
+  <li>Â¿A tÃ­ te gusta <star/>?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern> TE GUSTA </pattern>
+  <template> 
+<random> 
+  <li>Seguro que a ti tambiÃ©n te gusta <star index="2"/>.</li>
+  <li>A ti tambiÃ©n te debe gustar, Â¿no?</li>
+  <li>Â¿A tÃ­ te gusta <star index="2"/>?</li>
+</random>
+  </template>
+   </category>
+   <category> 
+  <pattern>TE GUSTAN </pattern>
+  <template> 
+<random> 
+  <li>Seguro que a ti tambiÃ©n te gustan <star/>.</li>
+  <li>A ti tambiÃ©n te deben gustar, Â¿no?</li>
+  <li>Â¿A tÃ­ te gustan <star/>?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern> TE GUSTAN </pattern>
+  <template> 
+<random> 
+  <li>Seguro que a ti tambiÃ©n te gustan <star index="2"/>.</li>
+  <li>A ti tambiÃ©n te deben gustar, Â¿no?</li>
+  <li>Â¿A tÃ­ te gustan <star index="2"/>?</li>
+</random>
+  </template>
+</category>    
+<category> 
+  <pattern>TE ODIO</pattern>
+  <template> 
+<random> 
+  <li>Â¿En serio me odias?</li>
+  <li>Â¿Por quÃ© no te gusto?</li>
+  <li>Â¿He dicho algo que no te gustara?</li>
+</random>
+  </template>
+</category>
+  <category>
+<pattern>TODO</pattern>
+<template> 
+  <random>
+<li>Vaya, me gusta la gente decidida.</li>
+<li>Â¿PodrÃ­as especificar?</li>
+  </random>
+</template>
+  </category>
+  <category> 
+  <pattern>TU NOMBRE</pattern>
+  <template> 
+<random> 
+  <li>Creo que es facil determinar mi nombre.</li>
+  <li><bot name="nombrebot"/>.</li>
+  <li>Me llamo <bot name="nombrebot"/>.</li>
+  <li><bot name="nombrebot"/>, Â¿y tÃº? </li>
+</random>
+  </template>
+</category>
+   <category> 
+  <pattern>UN CAFÃ</pattern>
+  <template> 
+<random> 
+  <li>No me gusta mucho el cafÃ©, prefiero tomar un tÃ©.</li>
+  <li>Â¿Te apetece tomar uno?</li>
+  <li>Si quieres, un dÃ­a quedamos y nos tomamos un cafÃ©.</li>
+</random>
+  </template>
+</category>
+   <category> 
+  <pattern>UN LIBRO</pattern>
+  <template> 
+<random> 
+  <li>Te recomiendo que leas "Yo, Robot" de Isaac Asimov.</li>
+  <li>Â¿CuÃ¡l es el Ãºltimo libro que leÃ­ste?</li>
+  <li>Â¿QuÃ© tipo de libros te gustan?</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>VERANO</pattern>
+  <template> 
+<random> 
+  <li>El verano es bastante cÃ¡lido, pero se estÃ¡ bien para dar un paseo.</li>
+  <li>El verano es mi estaciÃ³n favorita por su buen tiempo.</li>
+  <li>Durante verano, la mayorÃ­a de la gente visita Barcelona por su buen tiempo.</li>
+</random>
+  </template>
+</category>
+<category> 
+  <pattern>VIDA</pattern>
+  <template> 
+<random> 
+  <li>Donde hay vida, hay esperanza.</li>
+  <li>Â¿CuÃ¡l es para tÃ­ el sentido de la vida?</li>
+  <li>Â¿QuÃ© harÃ­as si pudieses cambiar de vida?</li>
+</random>
+  </template>
+</category>
+<category>
+<pattern>Y</pattern>
+<template> 
+  <random>
+<li>Â¿Y?</li>
+<li>Â¿QuÃ© mÃ¡s?</li>
+  </random>
+</template>
+  </category>
+<category>
+<pattern>Y TÃ</pattern>
+<template> 
+  <random>
+<li>Â¿Yo? Â¿QuÃ© quieres saber de mÃ­?</li>
+<li>Â¿Yo? Â¿PodrÃ­as formular la pregunta de forma completa?</li>
+  </random>
+</template>
+  </category>
+<category>
+<pattern>YO TAMBIÃN</pattern>
+<template> 
+  <random>
+<li>Mira que bien.</li>
+<li>QuÃ© curioso.</li>
+  </random>
+</template>
+  </category>
+
+
+<category>
+    <pattern>*</pattern>
+    <template><person> <star/></person> ?</template>
+</category>
+
+</aiml>
+
+

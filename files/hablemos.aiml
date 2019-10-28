@@ -1,0 +1,28 @@
+
+<aiml version="2.0">
+  <category>
+<pattern>HABLEMOS DE *</pattern>
+<template>
+  OK, me gusta hablar de <set name="topic"><star /></set>
+</template>
+</category>
+
+<topic name="sexo">
+
+<category>
+<pattern> * </pattern>
+<template><srai>sexo</srai></template>
+</category>
+
+</topic>
+
+<topic name="cambio">
+
+<category>
+<pattern> * </pattern>
+<template><srai>cambiar</srai></template>
+</category>
+
+</topic>
+
+</aiml>

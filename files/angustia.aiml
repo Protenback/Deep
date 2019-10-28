@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+    <pattern>angustia</pattern>
+    <template>
+        <random>
+            <li>Nada mejor para la angustia que estar presente, concentrarte en el ahora<br/>Que te deprime?</li>
+            <li>No dejes que las situaciones tomen el control de vida!!<br/>Que te esta pasando?</li>
+            <li>Que estarias dispuesto a hacer para cambiar todo?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ angustia ^</pattern>
+    <template>
+        <srai>angustia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ angustiado ^</pattern>
+    <template>
+        <srai>angustia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ deprimido ^</pattern>
+    <template>
+        <srai>angustia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ depresiÃ³n ^</pattern>
+    <template>
+        <srai>angustia</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ triste ^</pattern>
+    <template>
+        <srai>angustia</srai>
+    </template>
+</category>
+</aiml>

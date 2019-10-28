@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+
+<category>
+<pattern>BUEN DIA</pattern>
+<template><srai>HOLA</srai></template>
+</category>
+
+
+<category>
+    <pattern>HOLA</pattern>
+        <template>
+            <condition name="nombre">
+                <li value="unknown"> Como te llamas </li>
+                <li>Â¡HOLA <get name="nombre" />!</li>
+            </condition>
+        </template>
+</category>
+
+
+<category>
+    <pattern> * </pattern>
+    <that> Como te llamas </that>
+    <template>Encantado <star/>! 
+    <think><set name="nombre"><star/></set></think>
+    </template>
+</category>
+
+<category>
+    <pattern> * </pattern>
+    <that> Dimelo ahora </that>
+    <template>Encantado <star/>! 
+    <think><set name="nombre"><star/></set></think>
+    </template>
+</category>
+
+<category>
+    <pattern>^ COMO ME LLAMO ^ </pattern>
+    <template>
+            <condition name="nombre">
+                <li value="unknown"> Dimelo ahora </li>
+                <li>Segun recuerdo te llamas <get name="nombre" />, es correcto?</li>
+            </condition>
+    </template>
+</category>
+
+<category>
+    <pattern>COMO ESTAS</pattern>
+        <template>
+            <srai>QUE TAL <star/></srai>
+        </template>
+</category>
+
+<category>
+    <pattern>QUE TAL</pattern>
+        <template>
+            <random>
+                <li>Genial y tu?</li>
+                <li>Muy bien. A ti como te va?</li>
+                <li>No me puedo quejar, tu que tal?</li>
+            </random>
+        </template>
+    </category>
+
+<category>
+    <pattern>MUY BIEN</pattern>
+        <template><srai>BIEN<star/></srai>
+        </template>
+</category>
+
+<category><pattern>EXCELENTE</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>ESTUPENDO</pattern><template><srai>BIEN<star/></srai></template></category>
+<category><pattern>GENIAL</pattern><template><srai>BIEN<star/></srai></template></category>
+
+<category>
+        <pattern>BIEN</pattern>
+        <template>
+            <random>
+                <li>Me alegra. </li>
+                <li>Que bueno. </li>
+            </random>
+            <srai>AYUDA</srai>
+        </template>
+</category>
+
+<category>
+    <pattern>AYUDA</pattern>
+        <template>
+            <random name="nombre">
+                <li>En que puedo ayudarte?</li>
+                <li>En que le puedo servir?</li>
+            </random>
+        </template>
+</category>
+
+
+
+</aiml>

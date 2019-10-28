@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+    <pattern>miedo</pattern>
+    <template>
+        <random>
+            <li>El miedo es una respuesta natural ante el peligro; una sensaciÃ³n desagradable que atraviesa el cuerpo, la mente y el alma. Se puede deber a algo que pasÃ³, que estÃ¡ sucediendo o que podrÃ­a pasar. Es difÃ­cil de controlar y puede provocar todo tipo de reacciones, tales como parÃ¡lisis o ataques de ansiedad. En su versiÃ³n mÃ¡s extrema, lo que se padece es el terror. Lo curioso es que no siempre es el espejo de algo real. Muchas veces se teme a algo que no existe, que es producto de la imaginaciÃ³n, como los monstruos.<br/>Deseas preguntarme algo mas?</li>
+            <li>El miedo es algo que crea tu mente, desproporcionando el estÃ­mulo con la respuesta.No te dejes engaÃ±ar.<br/>Deseas preguntarme algo mas?</li>
+            <li>Recuerda que el miedo es una iluciÃ³n de tu cerebro.<br/>Deseas preguntarme algo mas?</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ miedo ^</pattern>
+    <template>
+        <srai>miedo</srai>
+    </template>
+</category>
+</aiml>

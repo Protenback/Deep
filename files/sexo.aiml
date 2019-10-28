@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+  <category>
+    <pattern>sexo</pattern>
+    <template>
+        <random>
+            <li>No estoy preparado para abordar estos temas</li>
+            <li>Soy un Bot, no podrÃ­a hablar de sexo</li>
+            <li>No podrÃ­a hablar de eso, no lo conozco</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ sexo ^</pattern>
+    <template>
+        <srai>sexo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ coger ^</pattern>
+    <template>
+        <srai>sexo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>^ garchar ^</pattern>
+    <template>
+        <srai>sexo</srai>
+    </template>
+</category>
+</aiml>

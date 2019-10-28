@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+    <pattern>decime</pattern>
+    <template>
+        <random>
+            <li>PreferirÃ­a que lo pienses vos</li>
+            <li>No puedo decirte nada, tu lo tienes que elaborar</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>^ decime ^</pattern>
+    <template>
+        <srai>decime</srai>
+    </template>
+</category>
+</aiml>

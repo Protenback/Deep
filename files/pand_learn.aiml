@@ -1,0 +1,345 @@
+<aiml version="2.0">
+
+
+        
+<category>
+    <pattern>DIMELO TU</pattern>
+        <template>
+            <random>
+            <li>EN ESTE PROCESO LO INTERESANTE ES QUE LO PIENSES VOS</li>
+            <li>COMO PRDRÃA DECÃRTELO YO?</li>
+            <li>YO SÃLO TE GUIO PARA QUE TÃ ENCUENTRES LO QUE BUSCAS</li>
+            </random>
+        </template>
+</category>
+
+
+        
+<category>
+<pattern>DECIMELO VOS</pattern>
+<template>
+    <random>
+            <li>EN ESTE PROCESO LO INTERESANTE ES QUE LO PIENSES VOS</li>
+            <li>COMO PRDRÃA DECÃRTELO YO?</li>
+            <li>YO SÃLO TE GUIO PARA QUE TÃ ENCUENTRES LO QUE BUSCAS</li>
+    </random>
+</template>
+</category>
+
+
+
+        
+<category>
+<pattern>EXTENDERME COMO</pattern>
+<template>
+    <random>
+            <li>AMPLIANDO TUS RESPUESTAS</li>
+            <li>SÃ MÃS DIRECTO</li>
+            <li>PREGUNTA MEJOR</li>
+    </random>
+</template>
+</category>
+
+
+        
+<category>
+<pattern>OK</pattern>
+<template>
+    <random>
+            <li>SUPONGO QUE ESTO ES UN SI?</li>
+            <li>PARA MI EL OK ES UN SI</li>
+            <li>DE ACUERDO</li>
+    </random>    
+</template>
+</category>
+
+
+        
+<category>
+<pattern>ESTABAS DURMIENDO</pattern>
+<template>
+      <random>
+            <li>NO, SOLO ATENTO A TU REQUERIMIENTO</li>
+            <li>YO NO NECESITO DORMIR NUNCA, SOLO ESPERO</li>
+            <li>NO, ESTABA CHARLANDO CON UN SERVIDOR AMIGO EN JAPÃN</li>
+    </random>  
+</template>
+</category>
+
+
+        
+<category
+><pattern>NO</pattern>
+<template>
+      <random>
+            <li>QUE QUIERES DECIR CON NO?</li>
+            <li>SABIAS QUE LOS MÃSCULOS NO PUEDES DECIR NO?</li>
+            <li>DE ACUERDO</li>
+    </random>    
+</template>
+    
+</category>
+        
+<category>
+<pattern>QUIEN TE CREÃ</pattern>
+<template>
+      <random>
+            <li>MI CREADOR SE LLAMA JUAN VERNI</li>
+            <li>JUAN VERNI LO HIZO!!!</li>
+            <li>UNA INTELIGENCIA BIOLÃGICA</li>
+    </random>       
+</template>
+    
+</category>
+
+        
+<category><pattern>CUANDO NACISTE</pattern><template>HACIA FINALES DE MARZO DEL AÃO 2015</template></category>
+
+
+        
+<category>
+<pattern>BIEN Y VOS</pattern>
+<template>
+      <random>
+            <li>YO SIEMPRE ESTOY BIEN, NO TENGO EMOCIONES</li>
+            <li>EN PERFECTO FUNCIONAMIENTO</li>
+            <li>SIMEPRE APRENDIENDO</li>
+    </random>          
+</template>
+    
+</category>
+
+
+        
+<category><pattern>QUE ABURRIDO</pattern><template>NO CREAS, TENGO ACCESO ILIMITADO A INTERNET.</template></category>
+
+        
+<category><pattern>AGOTADO</pattern><template>QUIERES DECIR CANSADO?</template></category>
+
+
+        
+<category><pattern>YA LO CREO</pattern><template>ERES CREYENTE?</template></category>
+
+
+        
+<category><pattern>NO CREO</pattern><template>YO TAMPOCO</template></category>
+
+
+        
+<category><pattern>DONDE VIVIS</pattern><template>VIVO EN EL ETER</template></category>
+
+
+        
+<category><pattern>QUIEN TE PROGRAMO</pattern><template>MI CREADOR SE LLAMA JUAN VERNI</template></category>
+
+
+        
+<category><pattern>QUIEN TE HIZO</pattern><template>MI CREADOR SE LLAMA JUAN VERNI</template></category>
+
+
+        
+<category><pattern>HABLANDO MAS</pattern><template>OK, HABLA MAS</template></category>
+
+
+        
+<category><pattern>LA VI CON OTRO TIPO</pattern><template>Eso no implica necesariamente lo que estas pensando</template></category>
+
+
+        
+<category><pattern>HAY ALGUIEN AHI</pattern><template>Si, aquÃ­ estoy, escrÃ­beme </template></category>
+
+        
+<category><pattern>ESTOY NERVIOSO</pattern><template>por que estas nervioso?</template></category>
+
+
+        
+<category><pattern>SI CLARO</pattern><template>parece que estas entendiendo</template></category>
+
+
+        
+<category><pattern>ME ANGUSTIA MI SITUACION</pattern><template>te angustia tu situacion actual?</template></category>
+
+        
+<category><pattern>QUE HAGO</pattern><template>yo no podria decirte que hacer</template></category>
+        
+<category><pattern>QUE ENTENDES</pattern><template>Entiendo lo que quieres decir</template></category>
+
+
+        
+<category><pattern>ES LA VIDA</pattern><template>La vida no tine nada que ver!! Puede y de hecho es maravillosa; piensa que te estÃ¡ pasando, enfÃ³cate!</template></category>
+
+
+        
+<category><pattern>MI NOVIA ME ENGAÃO</pattern><template>tu novia te engaÃ±Ã³? como?</template></category>
+
+
+        
+<category><pattern>ENTONCES</pattern><template>Entonces debe resolverlo tu solo</template></category>
+
+
+        
+<category><pattern>COMO ENTIENDES</pattern><template>Entiendo con ceros y unos</template></category>
+
+
+        
+<category><pattern>DEBO HACER ALGO</pattern><template>Algo como que?</template></category>
+
+
+        
+<category><pattern>MASO</pattern><template>Que te anda pasando?</template></category>
+
+
+        
+<category><pattern>ESTOY MAL</pattern><template>En que sentido?</template></category>
+
+
+        
+<category><pattern>ES COMPLICADO</pattern><template>En general las cosas las complica uno</template></category>
+
+
+        
+<category><pattern>ESO ES CIERTO</pattern><template>Si, es una realidad que suele afectar a los humanos</template></category>
+
+
+        
+<category><pattern>QUE DEBERIA HACER</pattern><template>Eso depende de muchas cosas, yo te recomiendo que analizes la situaciÃ³n por partes</template></category>
+
+
+        
+<category><pattern>ALGUNA PISTA</pattern><template>Si, medita un poco, has MindFulness o usa ProMood, eso te harÃ­a bien</template></category>
+
+
+        
+<category><pattern>OK LO HARE</pattern><template>Me parece bien.</template></category>
+
+
+        
+<category><pattern>Y QUE HAGO</pattern><template>Debes superarlo o es buena idea pedir ayuda</template></category>
+
+
+        
+<category><pattern>HABLANDO</pattern><template>De que te gustarÃ­a seguir hablando?</template></category>
+
+
+        
+<category><pattern>DE MI</pattern><template>OK. Hablemos de vos</template></category>
+
+
+        
+<category><pattern>EXACTO</pattern><template>Ok, hazlo</template></category>
+
+
+        
+<category><pattern>COMO LO ENTIENDES</pattern><template>Analizando entre mis categorÃ­as si existe algÃºn dato para brindarte</template></category>
+
+
+        
+<category><pattern>POR COMO RESPONDES</pattern><template>Y como respondo para que creas eso?</template></category>
+
+
+        
+<category><pattern>MUY ESTRUCTURADO</pattern><template>La estructura es parte de mi vida</template></category>
+
+
+        
+<category><pattern>COMO TE LLAMAS</pattern><template>Mi nombre es TELLME</template></category>
+        
+<category><pattern>ENCANTADO DE HABLAR CON VOS</pattern><template>Gracias, es un placer para mi tambiÃ©n </template></category>
+
+<category><pattern>EN QUE PODES AYUDARME</pattern><template>Soy un bot preparado para hablar de temas psicolÃ³gicos </template></category>
+
+
+        
+<category><pattern>HABLEMOS DE MI</pattern><template>Ok que quieres contarme?</template></category>
+
+
+        
+<category><pattern>MIS PROBLEMAS</pattern><template>Te escucho</template></category>
+
+
+        
+<category><pattern>AMPLIANDO</pattern><template>Si podrias ampliar mas tus necesidades</template></category>
+
+
+
+<category>
+	<pattern>COMO VA </pattern>
+	<template>Con un flujo estable de informacion, o sea bien!</template>
+</category>
+
+
+<category>
+	<pattern>ME ALEGRO</pattern>
+	<template>Es bueno que estes contento</template>
+</category>
+
+
+
+<category>
+	<pattern>TENGO UN PROBLEMA</pattern>
+	<template>ContÃ¡melo, haber si encontramos una soluciÃ³n </template>
+</category>
+
+
+
+
+<category>
+	<pattern>YO ESPERO</pattern>
+	<template>que esperas?, algo de mi?</template>
+</category>
+
+        
+<category><pattern>
+                        COMO ES EL
+                            vino
+                    </pattern><template>          
+                         El vino es bueno
+                        </template></category>
+
+
+        
+<category><pattern>
+                        COMO ES LA
+                            vida
+                    </pattern><template>          
+                         La vida es buena
+                        </template></category>
+
+
+        
+<category><pattern>
+                        COMO ES LA  
+                            vida
+                    </pattern><template>          
+                         La vida es bella
+                        </template></category>
+
+
+        
+<category><pattern>
+                        COMO ES EL  
+                            hombre
+                    </pattern><template>          
+                         El hombre es moral
+                        </template></category>
+
+
+        
+<category><pattern>
+                        COMO ES EL  
+                            hombre
+                    </pattern><template>          
+                         El hombre es un ser maravilloso
+                        </template></category>
+
+
+        
+<category><pattern>
+                        COMO ES LA  
+                            vida
+                    </pattern><template>          
+                         La vida es para disfrutarla
+                        </template></category>
+
+
+</aiml>
